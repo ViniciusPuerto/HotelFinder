@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'hotel_finder'
+puts HotelFinder.find(ARGV[0])
