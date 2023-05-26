@@ -43,3 +43,7 @@ https://www.tripadvisor.com/Hotel_Review-g303322-d13482932-Reviews-B_Hotel-Brasi
 https://www.booking.com/hotel/br/b-brasilia.html
 https://www.holidaycheck.de/hi/b-hotel-brasilia/aa8692bb-0054-482f-9fda-44ac478953fb
 ```
+
+## To run Specs
+
+inside the image run the following command: `bundle exec rspec`
