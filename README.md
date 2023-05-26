@@ -9,6 +9,14 @@ Given a hotel name (for example: "B Hotel Brasilia") it returns the URL of this 
 
 ## Installation
 
+### Prerequisites
+
+To a better compatibility with the environment, it is recommended to use a docker and just run the following commands.
+
+- [Docker](https://docs.docker.com/install/)
+
+### Steps
+
 Run the following commands:
 
 `docker build -t hotel_finder .` to build the docker image
