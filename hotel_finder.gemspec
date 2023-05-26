@@ -9,4 +9,6 @@ Gem::Specification.new do |s|
   s.email       = ''
   s.files       = ["lib/hotel_finder.rb", 'lib/search_service.rb']
   s.license     = 'MIT'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'webmock'
 end
