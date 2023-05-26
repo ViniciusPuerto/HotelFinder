@@ -40,7 +40,12 @@ class SearchService
 
       if cse_response.status == 200
         cse_response_json = JSON.parse(cse_response.body)
-        search_results.select { |k, v| v[:cse_id] == cse_id }.first[1][:link] = cse_response_json['items'][0]['link']
+        if cse_response_json['searchInformation']['totalResults'].to_i > 0
+          search_results.select { |k, v| v[:cse_id] == cse_id }.first[1][:link] = cse_response_json['items'][0]['link']
+        else
+          searched_site = search_results.select { |k, v| v[:cse_id] == cse_id }.first[0]
+          search_results.select { |k, v| v[:cse_id] == cse_id }.first[1][:link] = "Link not founded on #{searched_site}"
+        end
       end
     end
 
