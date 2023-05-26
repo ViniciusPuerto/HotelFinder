@@ -47,3 +47,7 @@ https://www.holidaycheck.de/hi/b-hotel-brasilia/aa8692bb-0054-482f-9fda-44ac4789
 ## To run Specs
 
 inside the image run the following command: `bundle exec rspec`
+
+### To Dos and Improvements
+
+- We are having some issues with the search, if the user not type the hotel name correctly, the search will not work properly.
